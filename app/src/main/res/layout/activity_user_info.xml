@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryLight"
+    tools:context="com.example.christina.creditrewards.UserInfoActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/csRow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/creditScore"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/textLabel"
+                android:id="@+id/csL"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="3"
+                android:hint="@string/creditScore"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:id="@+id/csF"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/numCardsRow"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numberCards"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/textLabel"
+                android:id="@+id/numCardsL"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="3"
+                android:hint="@string/numberCards"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:id="@+id/numCardsF"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/aprLinear"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aprL"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/textLabel"
+                android:id="@+id/aprL"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:id="@+id/aprF"
+                android:entries="@array/apr"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/onOffL"
+            android:layout_marginTop="10dp">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/ftfOn"
+                android:textOff="@string/ftfOff"
+                android:id="@+id/ftfToggle"
+                android:layout_weight="1"
+                android:textColor="@color/textLabel" />
+
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOn="@string/afOn"
+                android:textOff="@string/afOff"
+                android:id="@+id/afToggle"
+                android:layout_weight="1"
+                android:textColor="@color/textLabel"/>
+
+        </TableRow>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rewardsCategory"
+            android:entries="@array/rewardsCategory"
+            android:layout_marginTop="10dp"/>
+
+    </TableLayout>
+
+    <Button
+        android:text="@string/findCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:id="@+id/button"
+        android:textSize="24sp"
+        android:onClick="findCard"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/colorComplementLight"/>
+
+</RelativeLayout>

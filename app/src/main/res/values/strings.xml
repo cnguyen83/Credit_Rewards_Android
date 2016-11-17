@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Credit Rewards</string>
+    <string name="profile">Profile</string>
+
+    <!--Strings for Main -->
+    <string name="card"></string>
+    <string name="rewardsL">Rewards</string>
+    <string name="bonusL">Sign-up Bonus</string>
+    <string name="afL">Annual Fee</string>
+    <string name="aprL">Annual Percentage Rate</string>
+    <string name="btfeeL">Balance Transfer Fee</string>
+    <string name="forexL">Foreign Transaction Fee</string>
+
+    <!-- Strings for UserInfo -->
+    <string name="creditScore">Credit Score</string>
+    <string name="numberCards">Number of Cards</string>
+    <string name="ftfOn">5/24</string>
+    <string name="ftfOff">No 5/24</string>
+    <string name="afOn">No Annual Fee</string>
+    <string name="afOff">Annual Fee</string>
+    <string-array name="apr">
+        <item>&#60; 14%</item>
+        <item>&#60; 20%</item>
+        <item>&#60; 24%</item>
+        <item>No Preference</item>
+    </string-array>
+    <string-array name="rewardsCategory">
+        <item>Cash Back</item>
+        <item>Everyday Use</item>
+        <item>Starter / Secured</item>
+        <item>Travel</item>
+    </string-array>
+    <string name="findCard">Find My Credit Card</string>
+
+</resources>
