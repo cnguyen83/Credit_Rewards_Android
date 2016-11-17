@@ -25,6 +25,7 @@ Users have 6 different UI devices that they can use to input their constraints a
 	
 ##Logic
 The most binding user info is the credit score. The credit score takes precedence over any other user info when presenting a card. If the score is missing, the app assumes 0.
+
 The next most binding user info is 5/24 because that also affects which cards the user would be approved for.
 Following that, the user preference is considered in the following order:
 + (No) Annual Fee
