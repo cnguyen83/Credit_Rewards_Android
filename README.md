@@ -1,10 +1,10 @@
-#README: Credit Rewards for Android v1.0.0
+# README: Credit Rewards for Android v1.0.0
 
 This is a basic Android app that lets users select their constraints and preferences. Given those constraints and preferences, the app then presents users with the credit card best suited to their needs that they have a reasonable chance of being approved for.
 
 This project was built using Android Studio (Java and XML).
 
-##User Options
+## User Options
 
 Users have 6 different UI devices that they can use to input their constraints and preferences.
 
@@ -23,7 +23,7 @@ Users have 6 different UI devices that they can use to input their constraints a
 	* Travel
 	* Daily
 	
-##Logic
+## Logic
 The most binding user info is the credit score. The credit score takes precedence over any other user info when presenting a card. If the score is missing, the app assumes 0.
 
 The next most binding user info is 5/24 because that also affects which cards the user would be approved for.
@@ -32,5 +32,5 @@ Following that, the user preference is considered in the following order:
 + Rewards category
 + Max APR
 
-##Disclaimer
+## Disclaimer
 This project was created in November 2016. Information is not guaranteed to be up to date. Please check individual companies' websites for most recent information on rewards, promotions, fees, rates, terms and conditions. Offers may vary based on individual profiles and credit reports.
